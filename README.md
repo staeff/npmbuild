@@ -6,6 +6,12 @@ It is about how to use npm as a build-tool. Further the article compares npm wit
 only how to work with npm as a build-tool.
 
 ## How to use it
+    
+    $ git clone git@github.com:staeff/npmbuild.git
+    $ cd npmbuild/
+    $ npm run build
+    $ npm run emoji
+
 
 * the build task runs the following steps:
   * remove old dist-folder (clean)
