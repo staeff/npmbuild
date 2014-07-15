@@ -1,0 +1,20 @@
+{
+    "name": "npmbuild-tool",
+    "version": "0.1.0",
+    "scripts": {
+        "clean": "rm -rf ./dist",
+        "build-dist": "mkdir -p ./dist/js && mkdir -p ./dist/css",
+        "hintjs": "jshint ./src/js",
+        "concatjs": "cat ./src/js/*.js > ./dist/js/app.js",
+        "build-css": "stylus ./src/css/all.styl -o ./src/css",
+        "concatcss": "cat ./src/css/*.css > ./dist/css/style.css",
+        "build": "npm run clean && npm run hintjs && npm run build-dist && npm run concatjs && npm run build-css && npm run concatcss",
+        "emoji": "./emoji"
+    },
+    "devDependencies": {
+        "jshint": "^2.5.1",
+        "uglify-js": "^2.4.1",
+        "stylus": "^0.45.0",
+        "emoji-random": "^0.1.2"
+    }
+}
